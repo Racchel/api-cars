@@ -33,6 +33,7 @@ class ImportCategoryUseCase {
                 })
             })
             .on("end", () => {                                  // quando finalizar o parse
+                fs.promises.unlink(file.path);
                 resolve(categories);
             })
             .on("error", (err) => {
