@@ -7,7 +7,7 @@ sudo docker build -t rentx ./
 sudo docker run -p 3333:3333 rentx
 
 // executar cdm do container
-sudo docker exec -t nomeDoContainer /bin/bash
+sudo docker exec -t rentx /bin/bash
 
 // com docker-compose
 sudo docker-compose up -d -> -d serve para não travar o terminal

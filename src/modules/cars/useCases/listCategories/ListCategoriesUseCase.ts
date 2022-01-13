@@ -5,7 +5,7 @@ class ListCategoriesUseCase {
 
     constructor(private categoriesRepository: ICategoriesRepository) {}
 
-    execute(): Category[]  {
+    execute(): Promise<Category[]>  {
         const categories = this.categoriesRepository.list();
 
         return categories;
