@@ -56,3 +56,15 @@ docker log idContainer -f
 # Ver IP
 
 sudo docker exec nomeContainer cat /etc/hosts
+
+# Criar migrations
+
+yarn typeorm migration:create -n CreateCategories
+
+# Rodar migrations
+
+yarn typeorm migration:run
+
+# Down migrations
+
+yarn typeorm migration:reverte
