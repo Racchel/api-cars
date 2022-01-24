@@ -32,6 +32,7 @@ docker-compose stop
 # Stop and remove containers, networks..
 
 docker-compose down
+docker-compose down -v --rmi local
 
 # Down and remove volumes
 
